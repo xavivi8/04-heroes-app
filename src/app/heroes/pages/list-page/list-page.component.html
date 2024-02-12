@@ -1,0 +1,16 @@
+<!-- <ul *ngFor="let hero of heroe">
+  <li>ID: {{hero.id}}</li>
+  <li>Personajes: {{hero.characters}}</li>
+  <li>Publisher: {{hero.publisher}}</li>
+  <li>Alter ego: {{hero.alter_ego}}</li>
+  <li>Primera aparición: {{hero.first_appearance}}</li>
+  <li>Nombre: {{hero.superhero}}</li>
+</ul> -->
+<h1>Listado de Héroes</h1>
+
+<div class="grid mb-8">
+
+  <div *ngFor="let hero of heroe" class="col-12 sm:col-4 md:col-3 xl:col-2" >
+    <heroes-hero-card [hero]="hero" ></heroes-hero-card>
+  </div>
+</div>

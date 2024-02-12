@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>¿Está seguro?</h1>
+<div mat-dialog-content>
+  <p>Este proceso no es reversible. Si continua eliminará al heroe</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-flat-button color="warn" (click)="onNoClick()">No gracias</button>
+  <span class="spacer"></span>
+  <button mat-flat-button color="primary" (click)="onConfirm()">Ok</button>
+</div>
