@@ -1,4 +1,4 @@
-import { Observable, tap } from "rxjs";
+import { Observable, map, tap } from "rxjs";
 import { AutheService } from "../services/auth.service";
 import { CanMatchFn, Route, Router, UrlSegment } from "@angular/router";
 import { inject } from "@angular/core";
@@ -18,7 +18,8 @@ const checkAuthStatus = (): Observable<boolean> => {
       if( isAuthenticated ){
         router.navigate(['/heroes'])// Redirige al usuario a la ruta '/heroes' si está autentificado
       }
-    })
+    }),
+    map(isAuthenticated => !isAuthenticated)
   )
 }
 
