@@ -18,3 +18,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### Json
   1. Actualizo la versión con el comanod ```npm i --save-dev json-server@0.17.4```
+
+## Autores
+
+- [Francisco Javier Martín-Lunas Escobar](https://github.com/xavivi8) - Desarrollador principal
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
